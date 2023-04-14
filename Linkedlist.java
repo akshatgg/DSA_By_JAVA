@@ -11,8 +11,14 @@ public class Linkedlist {
         mylist.space();
         mylist.append(7);
         mylist.append2(9);
+        mylist.append(20);
         mylist.printlist();
+        mylist.getlength();
         mylist.space();
+        mylist.remove();
+        mylist.getlength();
+        mylist.printlist();
+
     }
     
 }

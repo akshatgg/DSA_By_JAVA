@@ -17,7 +17,7 @@ public class LinkedLIstClass {
         // Node newNode2=new  Node(value1);
     head=newNode;
     tail=newNode;
-    Length=2;
+    Length=1;
     }
     public void printlist(){
         Node temp=head; 
@@ -66,6 +66,29 @@ tail=newNode2;
         }
         Length++;
 
+    }
+
+    public void remove(){
+        Node temp=head;
+        Node pre=head;
+        if(Length==0){
+         head=null;
+         tail=null;
+        }
+        while(temp.next!=null){
+            pre=temp;
+            temp=temp.next;
+        }
+        tail=pre;
+        tail.next=null;
+        Length--;
+        if(Length==0){
+            head=null;
+            tail=null;
+        }
+        
+        
+        System.out.print(temp);
     }
 }
 
