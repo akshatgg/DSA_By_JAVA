@@ -5,7 +5,7 @@ public class LinkedLIstClass {
     private int Length;
     class Node{
         int value;
-        int value1;
+        
         Node next;
         Node(int value){
             this.value=value;
@@ -42,8 +42,8 @@ public class LinkedLIstClass {
     public void space(){
         System.out.println();
     }
-    public void append(int value3){
-        Node newNode2=new Node(value3);
+    public void append(int value){
+        Node newNode2=new Node(value);
         if (Length==0){
 head=newNode2;
 tail=newNode2;
@@ -53,6 +53,19 @@ tail=newNode2;
             tail=newNode2;
         }
         Length++;
+    }
+    public void append2(int value1){
+        Node newNode=new Node(value1);
+        if(Length==0){
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next=newNode;
+            tail=newNode;
+        }
+        Length++;
+
     }
 }
 

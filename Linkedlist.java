@@ -10,6 +10,7 @@ public class Linkedlist {
         mylist.getlength();
         mylist.space();
         mylist.append(7);
+        mylist.append2(9);
         mylist.printlist();
         mylist.space();
     }
