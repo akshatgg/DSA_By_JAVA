@@ -4,12 +4,13 @@ public class Linkedlist {
         LinkedLIstClass mylist= new LinkedLIstClass(4);
         mylist.space();
 
-        mylist.printlist();
-        mylist.space();
-
+        
         mylist.gethead();
         mylist.gettail();
         mylist.getlength();
+        mylist.space();
+        mylist.append(7);
+        mylist.printlist();
         mylist.space();
     }
     
