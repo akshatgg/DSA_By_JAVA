@@ -88,7 +88,7 @@ tail=newNode2;
         }
         
         
-        System.out.print(temp);
+        System.out.println(temp);
     }
     public void prepend(int value){
         Node newNode=new Node(value);
