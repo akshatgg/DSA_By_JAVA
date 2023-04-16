@@ -90,5 +90,36 @@ tail=newNode2;
         
         System.out.print(temp);
     }
+    public void prepend(int value){
+        Node newNode=new Node(value);
+        newNode.next=head;
+        head=newNode;
+        Length++;
+    }
+    public void removefirst(){
+        if(Length==0){
+            head=null;
+            tail=null;
+        }
+        Node temp=head;
+        head=head.next;
+        temp.next=null;
+        if(Length==0){
+            tail=null;
+        }
+        Length--;
+        System.out.print(temp);
+
+    }
+    public Node get(int index){
+     if (index<0 || index>=Length){
+        return null;
+     }
+     Node temp=head;
+     for(int i=0;i<index;i++){
+     temp=temp.next;
+    }
+     return temp;
+    }
 }
 

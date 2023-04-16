@@ -18,7 +18,15 @@ public class Linkedlist {
         mylist.remove();
         mylist.getlength();
         mylist.printlist();
-
+        mylist.prepend(43);
+        mylist.getlength();
+        mylist.space();
+        mylist.printlist();
+        mylist.removefirst();
+        mylist.gettail();
+        mylist.printlist();
+        mylist.getlength();
+        System.out.println(mylist.get(1).value);
     }
     
 }
