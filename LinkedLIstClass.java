@@ -1,3 +1,5 @@
+import javax.lang.model.util.ElementScanner8;
+
 public class LinkedLIstClass {
   
     private Node head;
@@ -67,7 +69,7 @@ tail=newNode2;
 
     }
 
-    public void remove(){
+    public void removelast(){
         Node temp=head;
         Node pre=head;
         if(Length==0){
@@ -150,5 +152,24 @@ tail=newNode2;
         return true;
 
     }
+    public void remove(int index){
+       if(index<0 || index>=Length){
+      System.out.println("null");
+       }      
+       if(index == 0){
+          removefirst();
+       }
+       if(index==Length-1) {
+         removelast();
+       }
+       
+       Node pre=get(index-1);
+       Node temp=pre.next;
+       pre.next=temp.next;
+       temp.next=null;
+       Length--;
+       System.out.println(temp.value);
+    }
 }
+
 
