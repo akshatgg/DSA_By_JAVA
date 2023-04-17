@@ -121,5 +121,35 @@ tail=newNode2;
     }
      return temp;
     }
+    public boolean set(int index, int value){          
+                                                                //  public Node set(int index,int value{
+                                                                // if(index>=Length)
+                                //   M2  ------                            // {
+                                                                //     return null;
+                                                                // } 
+                                                                // Node temp=head;
+                                                                // for(int i=0;i<index;i++){
+                                                                //     temp=temp.next;
+                                                                // }
+                                                                // temp.value=value;
+                                                                // return temp;
+                                                                // }
+        // Node temp=get(index);                         
+        // if(temp!=null){
+        // temp.value=value;               ------ -M3
+        // return true;
+        // }
+        // return false;
+        if(index>=Length){
+            return false;
+        }
+        Node temp=head;
+        for(int i=0;i<index;i++){
+            temp=temp.next;
+        }
+        temp.value=value;
+        return true;
+
+    }
 }
 
