@@ -42,8 +42,8 @@ public class LinkedLIstClass {
     public void space(){
         System.out.println();
     }
-    public void append(int value){
-        Node newNode2=new Node(value);
+    public void append(int value){                      
+        Node newNode2=new Node(value);                  
         if (Length==0){
 head=newNode2;
 tail=newNode2;
@@ -56,14 +56,13 @@ tail=newNode2;
     }
     public void append2(int value1){
         Node newNode=new Node(value1);
-        if(Length==0){
-            head=newNode;
-            tail=newNode;
+        Node temp=head;
+        while(temp.next!=null){
+            temp=temp.next;
         }
-        else{
-            tail.next=newNode;
-            tail=newNode;
-        }
+        tail=temp;
+        temp.next=newNode;
+        tail=newNode;
         Length++;
 
     }
@@ -119,7 +118,7 @@ tail=newNode2;
      for(int i=0;i<index;i++){
      temp=temp.next;
     }
-     return temp;
+    return temp;
     }
     public boolean set(int index, int value){          
                                                                 //  public Node set(int index,int value{

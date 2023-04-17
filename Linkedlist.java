@@ -27,9 +27,9 @@ public class Linkedlist {
         mylist.printlist();
         mylist.getlength();
         System.out.println(mylist.get(1).value);
-        mylist.set(2, 5);
-        mylist.space();
-        mylist.printlist();
+        // mylist.set(2, 5);
+        // mylist.space();
+        // mylist.printlist();
     }
     
 }
