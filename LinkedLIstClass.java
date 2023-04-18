@@ -170,6 +170,20 @@ tail=newNode2;
        Length--;
        System.out.println(temp.value);
     }
+    public void reverse(){
+        Node temp=head;
+        head=tail;
+        tail=temp;
+        Node after=temp.next;
+        Node before=null;
+        for(int i=0;i<Length;i++){
+            after=temp.next;
+            temp.next=before;
+            before=temp;
+            temp=after;
+
+        }
+    }
 }
 
 

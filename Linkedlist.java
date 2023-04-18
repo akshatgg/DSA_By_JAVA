@@ -34,6 +34,12 @@ public class Linkedlist {
         mylist.remove(1);
         mylist.space();
         mylist.printlist();
+        mylist.append(8);
+        mylist.prepend(9);
+        mylist.printlist();
+        mylist.space();
+        mylist.reverse();
+        mylist.printlist();
 
     }
     
