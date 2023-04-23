@@ -1,1 +1,1 @@
-        mylist.remove(1);
+mylist.loop(2);

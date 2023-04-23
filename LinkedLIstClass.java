@@ -102,6 +102,7 @@ tail=newNode2;
             head=null;
             tail=null;
         }
+        
         Node temp=head;
         head=head.next;
         temp.next=null;
