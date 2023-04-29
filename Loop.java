@@ -13,7 +13,7 @@ public class Loop {
         
         
         System.out.println("Has Loop:");
-     mylist.loop(2);
+    System.out.println( mylist.hasloop());
         
 //         if(mylist.getTail().next == mylist.getHead().next){
 // System.out.print("true");

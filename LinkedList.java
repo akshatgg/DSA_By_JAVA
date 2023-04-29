@@ -1,4 +1,4 @@
-public class LoopClass {
+public class LinkedList {
 
     private Node head;
     private Node tail;
@@ -13,7 +13,7 @@ public class LoopClass {
         }
     }
 
-    public LoopClass(int value) {
+    public LinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
         tail = newNode;
@@ -74,43 +74,20 @@ public class LoopClass {
         }
         length++;
     }
-
-public  boolean hasloop(){
+public Node findKthFromEnd(int k){
     Node temp=head;
-        for(int i=0; i<2-1;i++){
-            temp=temp.next;
-        }
-        Node pemp=temp;
-    while(temp!=null){
-    temp=temp.next; 
-    if(temp==tail){
-        temp.next=pemp;
-        
+    for(int i=0;i<=getLength()-k-1;i++){
+        temp=temp.next;
     }
-
-
-    if(getTail().next == getHead().next){
-        // System.out.println("true");
-        return true;
-  
-    }
-
+    return temp;
     
-    }
-return false;
 }
-
-
-
-
-
-
-
-
-
-
-
+	// WRITE FINDKTHFROMEND METHOD HERE //
+	//                                  //
+	//                                  //
+	//                                  //
+	//                                  //
+	//////////////////////////////////////
 
 }
-
 
