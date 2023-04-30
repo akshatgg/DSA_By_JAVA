@@ -155,18 +155,23 @@ return false;
 
     }
     public Node remove(int index){
-      if(index==0){
+     if(index<0 || index>length){
+        return null;
+     }
+        if(index==0){
 return removefirst();
     }
     if(index==length-1){
         return removelast();
     }
     else{
-        Node temp=get(index-1);
-       Node pemp=get(index+1);
+    //     Node temp=get(index-1);
+    //    Node pemp=get(index+1);
        Node remp=get(index);
-       temp.next=pemp;
-       pemp.prev=temp;
+    //    temp.next=pemp;
+    //    pemp.prev=temp;
+       remp.next.prev=remp.prev;
+       remp.prev.next=remp.next;
        remp.next=null;
        remp.prev=null;
        length--;
