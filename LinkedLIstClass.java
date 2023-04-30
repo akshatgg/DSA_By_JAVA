@@ -17,7 +17,7 @@ public class LinkedLIstClass {
     LinkedLIstClass (int value){
         Node newNode=new  Node(value);
         // Node newNode2=new  Node(value1);
-    head=newNode;
+    head=newNode; 
     tail=newNode;
     Length=1;
     }
