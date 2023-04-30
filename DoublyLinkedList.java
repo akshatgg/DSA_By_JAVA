@@ -6,8 +6,10 @@ public class DoublyLinkedList {
         mydl.append(3);
         mydl.prepend(1);
         mydl.prepend(0);
+        System.out.println(mydl.get(0).value);
+        mydl.set(1,6);
+        mydl.insert(1, 9);
+        mydl.remove(1);
         mydl.printlist();
-        System.out.println(mydl.get(1).value);
-         
     }
 }
