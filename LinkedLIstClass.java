@@ -1,4 +1,4 @@
-import javax.lang.model.util.ElementScanner8;
+
 
 public class LinkedLIstClass {
   
@@ -8,10 +8,9 @@ public class LinkedLIstClass {
     class Node{
         int value;
         
-        Node next;
+       Node next;
         Node(int value){
             this.value=value;
-            
         }
     }
     LinkedLIstClass (int value){

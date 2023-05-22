@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class DoublyLinkedListClass {
     
     private Node head;
@@ -152,7 +152,7 @@ return false;
             length++;
             return true;
         }
-
+        
     }
     public Node remove(int index){
      if(index<0 || index>length){
