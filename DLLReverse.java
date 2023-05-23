@@ -8,16 +8,12 @@ public class DLLReverse {
         myDLL.append(3);
         myDLL.append(4);
         myDLL.append(5);
-        
+        // myDLL.append(6);
         System.out.println("DLL before reverse:");
         myDLL.printList();
-        
         myDLL.reverse();
-        
         System.out.println("\nDLL after reverse:");
         myDLL.printList();
-        
-        
         /*
        		EXPECTED OUTPUT:
         	----------------
@@ -28,6 +24,7 @@ public class DLLReverse {
             4
             5
             
+
             DLL after reverse:
             5
             4

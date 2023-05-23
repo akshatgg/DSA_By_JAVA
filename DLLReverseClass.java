@@ -94,22 +94,29 @@ public class DLLReverseClass {
     }
 public Node reverse(){
     if(length%2!=0){
-for(int i=0;i<(length-2)/2;i++){
-    int j=1;
-get(i).value=get(length-j).value;
+        int j=1;
+for(int i=0;i<((length-((length-1)/2))-1);i++)
+{
+    
+    int temp=get(i).value;
+    get(i).value=get(length-j).value;
+    get(length-j).value=temp;
 j++;
+
 }
     }
     else{
+        int j=1;
         for(int i=0;i<length/2;i++){
-            int j=0;
+            int temp=get(i).value;
             get(i).value=get(length-j).value;
+            get(length-j).value=temp;
             j++;
         }
     }
     return head;
 }
-
+   
 
 	// WRITE REVERSE METHOD HERE //
 	//                           //
