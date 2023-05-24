@@ -118,7 +118,6 @@ public class DLLPalindromeClass {
                 else{
                     return false;
                 }
-                
             }
         }
         return false;
