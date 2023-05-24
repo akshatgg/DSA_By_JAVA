@@ -70,14 +70,62 @@ public class DLLPalindromeClass {
             if(length == 0) {
                 head = newNode;
                 tail = newNode;
-            } else {
+            } 
+        else {
                 tail.next = newNode;
                 newNode.prev = tail;
                 tail = newNode;
             }
             length++;
         }
+        public Node get(int index) {
+            if (index < 0 || index >= length) return null;
+            Node temp = head;
+            if (index < length/2) {
+                for (int i = 0; i < index; i++) {
+                    temp = temp.next;
+                }
+            } else {
+                temp = tail;
+                for (int i = length - 1; i > index; i--) {
+                    temp = temp.prev;
+                }
+            }
+            return temp;
+        }
+    public boolean  isPalindrome(){
+        if(length%2!=0){
+            int j=1;
+    for(int i=0;i<((length-((length-1)/2))-1);i++)
+    {
+        if(get(i).value == get(length-j).value){
+            j++;
+            return true;
+        }
+        else{
+         return false;
+        }
     
+    }
+        }
+        else{
+            int n=1;
+            for(int i=0;i<length/2;i++){
+                if(get(i).value == get(length-n).value){
+                    n++;
+                    return true;
+                }
+                else{
+                    return false;
+                }
+                
+            }
+        }
+        return false;
+        
+    }
+
+    }
         // WRITE ISPALINDROME METHOD HERE //
         //                                //
         //                                //
@@ -85,7 +133,7 @@ public class DLLPalindromeClass {
         //                                //
         ////////////////////////////////////
     
-    }
+    
     
     
 
