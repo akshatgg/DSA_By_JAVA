@@ -78,7 +78,7 @@ public class DLLSwaptwoPairsClass {
         }
         length++;
     }
-    public Node get(int index) {
+public Node get(int index) {
         if (index < 0 || index >= length) return null;
         Node temp = head;
         if (index < length/2) {
@@ -110,7 +110,7 @@ else if(length%2==0){
             get(i).value=get(i+1).value;
             get(i+1).value=temp;
         }
-    }
+    }    
 }
     return head;
 }
