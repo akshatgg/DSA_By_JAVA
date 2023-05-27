@@ -1,4 +1,5 @@
 public class pokemon {
+   
     String name;
     int level;
     int age;
@@ -13,3 +14,4 @@ name=pname;
 level=plevel;
     }
 }
+

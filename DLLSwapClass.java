@@ -40,6 +40,7 @@ public class DLLSwapClass {
         while (temp != null) {
             System.out.println(temp.value);
             temp = temp.next;
+            
         }
     }
     public void printAll() {
@@ -55,7 +56,7 @@ public class DLLSwapClass {
         if (length == 0) {
             System.out.println("empty");
         } else {
-            printList();
+            printList(); 
         }
     }
     public void makeEmpty() {
