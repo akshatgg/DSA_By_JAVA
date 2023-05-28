@@ -14,7 +14,7 @@ public class StackPush {
             /*
                 EXPECTED OUTPUT:
                 3
-                2
+                2 
                 1
     
             */
