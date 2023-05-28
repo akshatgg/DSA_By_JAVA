@@ -1,5 +1,8 @@
 import java.util.ArrayList;
-public class StackPopClass<T>{
+public class StackReverseStringClass<T>{
+
+
+    
     private ArrayList<T> stackList = new ArrayList<>();  
     
     public ArrayList<T> getStackList() {
@@ -31,21 +34,17 @@ public class StackPopClass<T>{
     public void push(T value) {
         stackList.add(value);
     }
-    public T pop() {
-    if(isEmpty()){
-        return null;
-    }
-    else{
     
+    public T pop() {
+        if (isEmpty()) return null;
         return stackList.remove(stackList.size() - 1);
     }
-    }
-    // WRITE POP METHOD HERE //
-    //                       //
-    //                       //
-    //                       //
-    ///////////////////////////
-    
+//     public void reverseString(String s){
+//         for(int i=s.length()-1; i>=0; i++){
+//         // System.out.print(stackList.get(i));
+//         } 
+        
+// }
 }
 
 
