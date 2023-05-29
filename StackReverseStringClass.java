@@ -23,6 +23,7 @@ public class StackReverseStringClass<T>{
         if (isEmpty()) {
             return null;
         } else {
+            
             return stackList.get(stackList.size() - 1);
         }
     }
