@@ -48,6 +48,21 @@ public class TreeClass {
     }
     
     }
+    public boolean contains(int data){
+     Node temp=root;
+     while(temp!=null){
+    if(temp.data>data){
+        temp=temp.left;
+    } 
+    else if(temp.data<data){
+        temp=temp.right;
+    }
+    else{
+        return true;
+    }
+    }
+    return false;
+}
 }
                 //         47
                 //       21   76
