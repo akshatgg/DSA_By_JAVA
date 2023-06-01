@@ -40,12 +40,7 @@ public class StackReverseStringClass<T>{
         if (isEmpty()) return null;
         return stackList.remove(stackList.size() - 1);
     }
-//     public void reverseString(String s){
-//         for(int i=s.length()-1; i>=0; i++){
-//         // System.out.print(stackList.get(i));
-//         } 
-        
-// }
+
 }
 
 
