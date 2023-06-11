@@ -1,7 +1,7 @@
 public class BalancedParentheses {
     public static boolean isBalancedParentheses(String s) 
     {
-        BalancedParenthesesClass<Character> chars =new BalancedParenthesesClass<>();
+        // BalancedParenthesesClass<Character> chars =new BalancedParenthesesClass<>();
         char[] c=s.toCharArray();
         int count1=0;
         int count2=0;
@@ -13,7 +13,7 @@ public class BalancedParentheses {
             else if(c[i]=='('){
                 count2++;
             }
-        }
+        } 
         if(count1==count2){
             return true;
         }
