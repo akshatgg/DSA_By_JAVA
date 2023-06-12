@@ -13,6 +13,9 @@ public class HashTableClass {
       this.key = key;
       this.value = value;
     }
+    Node(String key){
+      this.key=key;
+    }
   }
 
   public HashTableClass() {
@@ -23,9 +26,9 @@ public class HashTableClass {
     for (int i = 0; i < datamap.length; i++) {
       Node temp = datamap[i];
       System.out.println(i + ":");
-      while (datamap[i] != null) {
-        System.out.println(datamap[i].key + "=" + datamap[i].value);
-        datamap[i] = datamap[i].next;
+      while ( temp != null) {
+        System.out.println( temp.key + "=" +  temp.value);
+        temp =  temp.next;
       }
     }
   }
@@ -48,10 +51,22 @@ public class HashTableClass {
       datamap[index]= newNode;
     } 
     else {
-      while (tamp != null) { 
+      while (tamp.next != null) { 
         tamp = tamp.next;
       }
-      tamp = newNode;
+      tamp.next = newNode;
     }
+  }
+  public void get(String key){
+    int index = hash(key);
+    Node newNode=new Node(key);
+    Node temp=datamap[index];
+    while(newNode.key!=temp.key && temp!=null){
+      temp=temp.next;
+    }
+    if(temp!=null){
+      System.out.println("find");
+    }
+    
   }
 }
