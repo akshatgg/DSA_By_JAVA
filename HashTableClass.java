@@ -7,6 +7,7 @@ public class HashTableClass {
         int value;
         Node(String key,int value){
          this.key=key;
+         
          this.value=value;
         }
     }
