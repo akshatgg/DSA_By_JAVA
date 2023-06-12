@@ -9,13 +9,13 @@ public class TreeClass {
             this.data=data;
         }
     }
-  public  int TreeClass(int data){
+  public  TreeClass(int data){
         Node newNode=new Node(data);
         if(root==null){
             root=newNode;
         }
     length=1;
-    return length;
+    
     }
     public boolean insert(int data){
         Node newNode=new Node( data);
