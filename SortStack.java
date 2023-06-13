@@ -3,12 +3,20 @@ public class SortStack {
         SortStackClass<Integer> s=new SortStackClass<>();
         while(!stack.isEmpty()){
             int temp=stack.pop();
-        while(temp>stack.pop() && stack.pop()!=null){
-        s.push(stack.pop());
-        }   
+            if(s.isEmpty()){
+
+                s.push(temp);
+            }
+        while(temp>stack.peek()){
+            int pop=stack.pop();
+            stack.push(temp);
+            s.push(pop);
+        }  
+       
+        
         }
         while(s!=null){
-        System.out.println(s.peek());
+        System.out.println(s.pop());
     }
 }
 
