@@ -6,5 +6,6 @@ public class HashTable {
     mytable.set("bolts",200);
     mytable.printall();
     mytable.get("tails");
+   System.out.println( mytable.keys());
 }
 }

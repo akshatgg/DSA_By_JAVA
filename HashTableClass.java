@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import javax.sql.rowset.spi.SyncResolver;
 
 public class HashTableClass {
@@ -69,4 +71,16 @@ public class HashTableClass {
     }
     
   }
+  public ArrayList keys(){
+    ArrayList<String> allkeys=new ArrayList<>();
+    for(int i=0;i<datamap.length;i++){
+      Node temp=datamap[i];
+      while(temp!=null){
+        allkeys.add(temp.key);
+        temp=temp.next;
+      }
+    }
+    return allkeys;
+  }
+
 }
