@@ -4,20 +4,29 @@
 public class queueClass {
     private Stack<Integer> stack1;
     private Stack<Integer> stack2;
-
     public queueClass() {
         stack1 = new Stack<>();
         stack2 = new Stack<>();
     }
-     public int enqueue(int n){
-          stack1.push(n);
-          while(stack1 !=null){
-          stack2.push((stack1.pop()));
-    
-     
+     public void enqueue(int n){
+         while(!stack1.isEmpty()){
+             stack2.push((stack1.pop()));  
+            }
+            stack1.push(n);
+            while(!stack2.isEmpty()){
+                stack1.push(stack2.pop());
+            }
+       
         }
-        return stack2.peek();
-        }
+    //          public void enqueue(int value) {
+    //     while (!stack1.isEmpty()) {
+    //         stack2.push(stack1.pop());
+    //     }
+    //     stack1.push(value);
+    //     while (!stack2.isEmpty()) {
+    //         stack1.push(stack2.pop());
+    //     }
+    // }
     // WRITE THE ENQUEUE METHOD HERE //
     //                               //
     //                               //
