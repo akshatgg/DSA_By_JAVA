@@ -1,7 +1,4 @@
 import java.util.ArrayList;
-
-
-
 public class HashTableClass {
   private int size = 7;
   private Node[] datamap;
@@ -9,9 +6,7 @@ public class HashTableClass {
   class Node {
     String key;
     Node next;
-  
     int value;
-  
     Node(String key, int value) {
       this.key = key;
       this.value = value;
@@ -20,11 +15,9 @@ public class HashTableClass {
       this.key=key;
     }
   }
-
   HashTableClass() {
     datamap = new Node[size];
   }
-
   public void printall() {
     for (int i = 0; i < datamap.length; i++) {
       Node temp = datamap[i];
@@ -44,7 +37,6 @@ public class HashTableClass {
     }
     return hash;
   }
-
     public void set(String key, int value) 
     {
     int index = hash(key);
@@ -83,5 +75,4 @@ public class HashTableClass {
     }
     return allkeys;
   }
-
 }

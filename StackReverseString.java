@@ -7,13 +7,12 @@ for(char c:chars){
 }
 for(int i=0;i<myString.length();i++){
     chars[i]=s.pop();
-    
 }
 return new String(chars);
 }
-
         // WRITE THE REVERSESTRING METHOD HERE //
-        //                                     //
+        //             
+                               //
         //                                     //
         //                                     //
         //                                     //

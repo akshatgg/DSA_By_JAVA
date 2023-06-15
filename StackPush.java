@@ -1,6 +1,5 @@
 public class StackPush {
-    
-
+        
         public static void main(String[] args) {
     
             StackPushClass myStack = new StackPushClass();
