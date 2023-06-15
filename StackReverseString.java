@@ -11,15 +11,12 @@ for(int i=0;i<myString.length();i++){
 return new String(chars);
 }
         // WRITE THE REVERSESTRING METHOD HERE //
-        //             
-                               //
+        //                                      //
+        //                                     //
         //                                     //
         //                                     //
         //                                     //
         /////////////////////////////////////////
-        
-       
-    
         public static void main(String[] args) {
     
             String myString = "hello";
