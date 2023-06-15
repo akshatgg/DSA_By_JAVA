@@ -15,6 +15,6 @@ public class Tree {
      System.out.println(myTC.root.left.right.data);
      System.out.println(myTC.contains(27));
      System.out.println(myTC.contains(67));
-
+     
 }
 }

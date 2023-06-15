@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-import javax.sql.rowset.spi.SyncResolver;
+
 
 public class HashTableClass {
   private int size = 7;
@@ -21,7 +21,7 @@ public class HashTableClass {
     }
   }
 
-  public HashTableClass() {
+  HashTableClass() {
     datamap = new Node[size];
   }
 
