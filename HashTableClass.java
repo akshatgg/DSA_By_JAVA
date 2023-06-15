@@ -9,6 +9,7 @@ public class HashTableClass {
   class Node {
     String key;
     Node next;
+  
     int value;
   
     Node(String key, int value) {
