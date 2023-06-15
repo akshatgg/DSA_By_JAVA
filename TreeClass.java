@@ -15,7 +15,6 @@ public class TreeClass {
             root=newNode;
         }
     length=1;
-    
     }
     public boolean insert(int data){
         Node newNode=new Node( data);

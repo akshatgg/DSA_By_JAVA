@@ -1,8 +1,8 @@
 public class Tree {
     public static void main(String[] args){
-     TreeClass myTC=new TreeClass();
+     TreeClass myTC=new TreeClass(47);
     //  myTC.TreeClass(47);
-     myTC.insert(47);
+    //  myTC.insert(47);
 
      myTC.insert(21);
      myTC.insert(76);
