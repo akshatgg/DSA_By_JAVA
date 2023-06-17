@@ -4,8 +4,14 @@ public class Graph {
         mygc.addvertex("A");
         mygc.addvertex("B");
         mygc.addvertex("C");
+        mygc.addvertex("D");
         mygc.addedge("A", "B");
         mygc.addedge("A","C");
+        mygc.addedge("A","D");
+        mygc.addedge("B","D");
+        mygc.addedge("C","D");
+    
+
         // mygc.removeedge("A", "B");
         mygc.printmap();
     }
