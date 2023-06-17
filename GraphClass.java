@@ -13,5 +13,21 @@ public class GraphClass {
        }
 return false;
     }
+    public Boolean addedge(String v1,String v2){
+if(myhp.get(v1)!=null && myhp.get(v2)!=null){
+    myhp.get(v1).add(v2);
+    myhp.get(v2).add(v1);
+    return true;
+}
+return false;
+    }
+    public Boolean removeedge(String v1,String v2){
+        if(myhp.get(v1)!=null && myhp.get(v2)!=null){
+            myhp.get(v1).remove(v2);
+            myhp.get(v2).remove(v1);
+            return true;
+        }
+        return false;
+    }
     
 }
