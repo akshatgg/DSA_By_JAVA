@@ -18,9 +18,6 @@ for(int e:nums){
 return myhp.keySet();
 }
 
-
-
-    
     // WRITE THE FINDDUPLICATES METHOD HERE // 
     //                                      //
     //                                      //
