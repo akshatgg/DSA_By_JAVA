@@ -29,5 +29,14 @@ return false;
         }
         return false;
     }
-    
+    public Boolean removevertex(String vertex){
+    if(myhp.get(vertex)==null){
+        return false;
+    }
+    for(String v3:myhp.get(vertex)){
+myhp.get(v3).remove(vertex);
+    }
+    myhp.remove(vertex);
+    return true;
+    }
 }

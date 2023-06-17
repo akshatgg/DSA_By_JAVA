@@ -10,9 +10,8 @@ public class Graph {
         mygc.addedge("A","D");
         mygc.addedge("B","D");
         mygc.addedge("C","D");
-    
-
+        mygc.removevertex("D");
         // mygc.removeedge("A", "B");
         mygc.printmap();
     }
-}
+ }
