@@ -1,6 +1,6 @@
 import java.util.*;
 public class nonrepeating {
-public static Object firstNonRepeatingChar(String s){
+public static Character firstNonRepeatingChar(String s){
     HashMap<Character,Integer> myhp=new HashMap<>();
 char[] c=s.toCharArray();
 for(char e: c){
