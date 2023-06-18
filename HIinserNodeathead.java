@@ -52,7 +52,7 @@ import java.util.*;
     static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode llist, int data) {
     SinglyLinkedListNode newNode= new SinglyLinkedListNode(data);
     
-   SinglyLinkedListNode temp=llist;
+   
     if(llist==null){
      llist=newNode;
     }
@@ -62,8 +62,6 @@ import java.util.*;
     
    }
     return llist;
-
-
     }
 
     private static final Scanner scanner = new Scanner(System.in);
