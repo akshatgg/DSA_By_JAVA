@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
 public class GraphClass {
     private HashMap<String,ArrayList<String>> myhp=new HashMap<>();
     public void printmap(){
