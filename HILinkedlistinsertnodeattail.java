@@ -4,7 +4,7 @@ import java.util.*;
 
 
 
-    public class HILinkedlist {
+    public class HILinkedlistinsertnodeattail {
 
     static class SinglyLinkedListNode {
         public int data;
