@@ -1,10 +1,7 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
+
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+
 
 
     public class HILinkedlist {
@@ -51,17 +48,22 @@ import java.util.regex.*;
      * }
      *
      */
+  
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
-    SinglyLinkedListNode temp=head;
-     SinglyLinkedListNode newNode=new  SinglyLinkedListNode(data);
-
-        while(temp.next!=null){
-        head=temp.next;
+    SinglyLinkedListNode newNode = new SinglyLinkedListNode(data);
+    if (head == null) {
+        head = newNode;
+    } 
+    else {
+        SinglyLinkedListNode temp = head;
+        while (temp.next != null) {
+            temp = temp.next;
+        }
+        temp.next = newNode;
     }
-    temp.next=newNode;
-    return temp;
+    return head;
+}
 
-    }
 
     private static final Scanner scanner = new Scanner(System.in);
 
