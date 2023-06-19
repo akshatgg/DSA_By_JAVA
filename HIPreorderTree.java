@@ -39,6 +39,7 @@ class Node {
      System.out.print(pope.data+" ");
       if(pope.right!=null){
          s.push(pope.right);
+         
      }
      if(pope.left!=null){
          s.push(pope.left);
