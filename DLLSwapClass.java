@@ -18,6 +18,7 @@ public class DLLSwapClass {
         length = 1;
     }
     public Node getHead() {
+        
         return head;
     }
     public Node getTail() {
