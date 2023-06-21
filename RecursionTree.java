@@ -8,9 +8,9 @@ public class RecursionTree{
     rc.insert(1);
     rc.insert(3);
       rc.contains(2);
-      rc.delete(1);
-      System.out.println(rc.contains(1));
+    //   rc.delete(1);
+    //   System.out.println(rc.contains(1));
     // System.out.println(rc.root.left.data);
-
+       System.out.println(rc.root.data);
     }
 }

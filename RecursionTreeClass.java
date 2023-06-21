@@ -55,4 +55,11 @@ public class RecursionTreeClass {
     public Node delete(int value){
         return delete(root,value);
     }
+    public int minvalue(Node currNode){
+        while(currNode.left!=null){
+            currNode=currNode.left;
+        }
+        return currNode.data;
+    }
+    p
 }
