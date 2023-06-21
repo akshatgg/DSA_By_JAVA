@@ -35,6 +35,7 @@ public class RecursionTreeClass {
     }
     public Node insert(int value){
         if(root==null)root=new Node(value);
+        
         return insert(root,value);
 
     }
