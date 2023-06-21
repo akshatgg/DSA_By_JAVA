@@ -35,8 +35,24 @@ public class RecursionTreeClass {
     }
     public Node insert(int value){
         if(root==null)root=new Node(value);
-        
+
         return insert(root,value);
 
+    }
+    public Node delete(Node currNode,int value){
+        if(currNode.data==value){
+        return null;
+        }
+        if(value<currNode.data){
+            currNode.left=delete(currNode.left,value);
+        }
+        else if(value>currNode.data){
+            currNode.right=delete(currNode.right,value);
+        }
+        return currNode;
+
+    }
+    public Node delete(int value){
+        return delete(root,value);
     }
 }
