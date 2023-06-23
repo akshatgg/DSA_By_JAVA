@@ -75,7 +75,7 @@ public Node delete(Node currNode,int value){
         if(currNode.left==null && currNode.right==null){
             currNode=null;
         }
-        
+
        else if(currNode.left==null){
             currNode=currNode.right;
         }
