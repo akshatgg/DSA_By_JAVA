@@ -7,61 +7,51 @@ import java.util.concurrent.*;
 import java.util.regex.*;
 
 class Result {
-    
+
     /*
-    * Complete the 'twoStacks' function below.
-    *
-    * The function is expected to return an INTEGER.
-    * The function accepts following parameters:
-    *  1. INTEGER maxSum
-    *  2. INTEGER_ARRAY a
-    *  3. INTEGER_ARRAY b
-    */
-    
+     * Complete the 'twoStacks' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts following parameters:
+     *  1. INTEGER maxSum
+     *  2. INTEGER_ARRAY a
+     *  3. INTEGER_ARRAY b
+     */
+
     public static int twoStacks(int maxSum, List<Integer> a, List<Integer> b) {
-        // Write your code here
-        Stack<Integer> s=new Stack<>();
-        
-        Stack<Integer> s2=new Stack<>();
-      
-     int sum2=0,count=0;
-     
-     for(int i=(a.size()-1);i>=0;i--){
-         s.add(a.get(i));
+    // Write your code here;
+    int sum=0;
+    int indexA=0;
+    int indexB=0;
+    int count=0;
+    while(sum<maxSum){
+        if(a.get(indexA)<b.get(indexB)){
+        sum+=a.get(indexA);
+        if(sum<maxSum){
+        indexA++;
+        count++;
         }
-        for(int i=(b.size()-1);i>=0;i--){
-            s2.add(b.get(i));
+        else{
+            break;
         }
-        while(maxSum>sum2){
-            
-            if(s.peek()>s2.peek()){
-                if(sum2+s2.peek()<maxSum){
-                    sum2=sum2+s2.pop();
-                    count++;
-                }
-                else{
-                    break;
-                }
+        }
+        else{
+            sum+=b.get(indexB);
+            if(sum<maxSum){
+            indexB++;
+            count++;
             }
-            else if(s.peek()<s2.peek()){
-                if(sum2+s.peek()<maxSum){
-                    sum2=sum2+s.pop();
-                    count++;
-                }
-                else{
-                    break;
-                }
-                
+            else{
+                break;
             }
         }
-        return count;
-        
     }
-    
+    return count;
+    }
+
 }
 
 public class HIGameoftwoStacksM2 {
-
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -104,6 +94,4 @@ public class HIGameoftwoStacksM2 {
         bufferedReader.close();
         bufferedWriter.close();
     }
-}
-
 }
