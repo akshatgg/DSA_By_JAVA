@@ -1,21 +1,14 @@
 import java.util.*;
-
-
 public class HashMaptwoSum {
-
-
-
-
 public static Integer[] twoSum(int[] A,int target){
-
     Integer[] arr=new Integer[2];
     for(int i=1;i<A.length;i++){
         int sum =0;
         sum=A[i]+A[i-1];
         if(sum==target){
             int j=0;
-            arr[j]=A[i-1];
-            arr[j+1]=A[i]; 
+            arr[j]=i-1;
+            arr[j+1]=i; 
             
             return arr;
 }
