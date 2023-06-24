@@ -1,9 +1,5 @@
-public class queueudemyd {
-
-    public static void main(String[] args) {
-
-        // Create a new queue
-        queueudemydClass q = new queueudemydClass();
-
-        // Enqueue some values
-        q.enqueue(1);
+public class Graph {
+    public static void main(String[] args){
+        GraphClass mygc=new GraphClass();
+        mygc.addvertex("A");
+        mygc.addvertex("B");

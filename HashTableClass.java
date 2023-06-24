@@ -62,6 +62,9 @@ public class HashTableClass {
     if(temp!=null){
       System.out.println("find");
     }
+    else{
+      System.out.println("not find");
+    }
     
   }
   public ArrayList keys(){
@@ -74,5 +77,6 @@ public class HashTableClass {
       }
     }
     return allkeys;
+
   }
 }
