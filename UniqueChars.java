@@ -8,13 +8,17 @@ public class UniqueChars {
         myhp.add(e);
         }
         for(char e:c){
+            int count=0;
             for(char l:c){
                 if(e==l){
-                return true;
+                    count++;
+                    if(count==2){
+                return false;
+                    }
                 }
             }
         }
-        return false;
+        return true;
     }
     // WRITE HASUNIQUECHARS METHOD HERE //
     //                                  //
