@@ -9,10 +9,6 @@ import java.util.Iterator;
 public class RemoveDuplicate {
     public static List<Integer> removeDuplicates(List<Integer> mylist){
         HashSet<Integer> myhp=new HashSet<>(mylist);
-       
-        
-
-
 return new ArrayList<>(myhp);
     }
     
