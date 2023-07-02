@@ -79,6 +79,8 @@ public Node delete(Node currNode,int value){
        else if(currNode.left==null){
             currNode=currNode.right;
         }
+
+        
         else if(currNode.right==null){
             currNode=currNode.left;
         }
