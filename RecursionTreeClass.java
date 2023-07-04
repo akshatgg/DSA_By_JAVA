@@ -91,6 +91,7 @@ public Node delete(Node currNode,int value){
 
             
             currNode.right=delete(currNode.right,subtreemin);
+            
         }
     }
     return currNode;
