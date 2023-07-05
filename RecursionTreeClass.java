@@ -88,6 +88,7 @@ public Node delete(Node currNode,int value){
             int subtreemin=minvalue(currNode.right);
             currNode.data=subtreemin;
 
+            
 
             
             currNode.right=delete(currNode.right,subtreemin);
