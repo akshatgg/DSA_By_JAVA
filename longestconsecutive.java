@@ -1,9 +1,22 @@
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.ArrayList;
+import java.util.*;
 public class longestconsecutive {
-public static int longestConsecutiveSequence(int[] n){
+public static Integer longestConsecutiveSequence(int[] n){
+    int length=0;
+    ArrayList<Integer> list=new ArrayList<>();
+for(int i:n){
+    for(int j=0;j<n.length;j++){
+    if(i+1==n[j]){
+        i=i+1;
+        length++;
+        j=0;
+    }
+}
+list.add(length);
+length=0;
+}
 
+return Collections.max(list)+1;
 }
 
  
