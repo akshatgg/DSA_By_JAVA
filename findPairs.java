@@ -2,7 +2,7 @@ import java.util.*;
 
 
 public class findPairs {
-public static List<int[]> findPairs(int[] A,int[] B,int t){
+public static List<int[]>findPairs(int[] A,int[] B,int t){
 List<int[]> list=new ArrayList<>();
 for(int a: A){
     for(int b:B){
