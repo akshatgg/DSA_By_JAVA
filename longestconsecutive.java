@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.*;
 public class longestconsecutive {
 public static Integer longestConsecutiveSequence(int[] n){
-    int length=0;
+    int length=1;
     ArrayList<Integer> list=new ArrayList<>();
 for(int i:n){
     for(int j=0;j<n.length;j++){
@@ -13,10 +13,10 @@ for(int i:n){
     }
 }
 list.add(length);
-length=0;
+length=1;
 }
 
-return Collections.max(list)+1;
+return Collections.max(list);
 }
 
  
