@@ -15,7 +15,7 @@ public class QueueClass{
         first = newNode;
         last = newNode;
         length = 1;
-}
+} 
 public void printqueue(){
         Node temp = first;
         while(temp != null){
