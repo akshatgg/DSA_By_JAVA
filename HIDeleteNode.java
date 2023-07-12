@@ -1,13 +1,9 @@
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
+
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+
 
 public class HIDeleteNode {
-
 
     static class SinglyLinkedListNode {
         public int data;
@@ -74,12 +70,15 @@ public class HIDeleteNode {
      *
      */
 
-    public static SinglyLinkedListNode deleteNode(SinglyLinkedListNode head, int position) {
+    public static SinglyLinkedListNode deleteNode(SinglyLinkedListNode llist, int position) {
     // Write your code here
-    SinglyLinkedListNode temp=head;
-        SinglyLinkedListNode pemp=head;
+    SinglyLinkedListNode temp=llist;
+        SinglyLinkedListNode pemp=llist;
 
     int i=0;
+    if(position==0){
+        llist=llist.next;
+    }
 for(i=0;i<=position-1;i++){
     temp=temp.next;
 }
@@ -88,7 +87,7 @@ pemp=pemp.next;
 }
 pemp.next=temp.next;
 temp.next=null;
-return head;
+return llist;
     }
 
 
@@ -122,10 +121,4 @@ return head;
 
         scanner.close();
     }
-
-   
-
-  
 }
-
-
