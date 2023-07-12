@@ -46,6 +46,7 @@ public class HashTableClass {
       datamap[index]= newNode;
     } 
     else {
+      
       while (tamp.next != null) { 
         tamp = tamp.next;
       }
