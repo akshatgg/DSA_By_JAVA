@@ -55,9 +55,8 @@ public class HashTableClass {
   }
   public void get(String key){
     int index = hash(key);
-    Node newNode=new Node(key);
     Node temp=datamap[index];
-    while(newNode.key!=temp.key && temp!=null){
+    while(key!=temp.key && temp!=null){
       temp=temp.next;
     }
     if(temp!=null){
@@ -66,7 +65,6 @@ public class HashTableClass {
     else{
       System.out.println("not find");
     }
-    
   }
   public ArrayList keys(){
     ArrayList<String> allkeys=new ArrayList<>();
