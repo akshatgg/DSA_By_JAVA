@@ -106,6 +106,7 @@ public ArrayList<Integer> BST(){
     }
         new traverse(root);
 return arr;
+
   }
   public ArrayList<Integer> postorder(){
     ArrayList<Integer> arr=new ArrayList<>();
@@ -118,7 +119,6 @@ return arr;
                 new traverse(currnode.right);
             }
             arr.add(currnode.data);
-
         }
     }
         new traverse(root);
