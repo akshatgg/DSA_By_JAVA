@@ -11,5 +11,6 @@ public class BinarysearchTree {
     System.out.println(mybst.BST());
     System.out.println(mybst.preorder());
     System.out.println(mybst.postorder());
+    System.out.println(mybst.inorder());
     }
 }
