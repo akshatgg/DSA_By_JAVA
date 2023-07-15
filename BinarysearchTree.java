@@ -9,5 +9,7 @@ public class BinarysearchTree {
     mybst.insert(52);
     mybst.insert(82);
     System.out.println(mybst.BST());
+    System.out.println(mybst.preorder());
+    System.out.println(mybst.postorder());
     }
 }

@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import java.util.Collections;
+
 public class BinarysearchTreeClass {
     public Node root;
     public int length;
@@ -87,6 +89,43 @@ public ArrayList<Integer> BST(){
   }
   return array;
 
+  }
+  public ArrayList<Integer> preorder(){
+    ArrayList<Integer> arr=new ArrayList<>();
+    class traverse{
+        traverse(Node currnode){
+            arr.add(currnode.data);
+            if(currnode.left!=null){
+                new traverse(currnode.left);
+            }
+            if(currnode.right!=null){
+                new traverse(currnode.right);
+            }
+
+        }
+    }
+        new traverse(root);
+return arr;
+  }
+  public ArrayList<Integer> postorder(){
+    ArrayList<Integer> brr=new ArrayList<>();
+
+    ArrayList<Integer> arr=new ArrayList<>();
+       class traverse{
+        traverse(Node currnode){
+            if(currnode.left!=null){
+                new traverse(currnode.left);
+            }
+            if(currnode.right!=null){
+                new traverse(currnode.right);
+            }
+            arr.add(currnode.data);
+
+        }
+    }
+        new traverse(root);
+       return arr;
+    
   }
 
 }
