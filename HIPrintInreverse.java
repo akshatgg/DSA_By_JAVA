@@ -75,6 +75,7 @@ public class HIPrintInreverse {
     // Write your code here
     
     SinglyLinkedListNode temp=llist;
+    
     List<Integer> list=new ArrayList<>();
     while(temp!=null){
         list.add(temp.data);
