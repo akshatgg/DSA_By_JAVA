@@ -17,7 +17,20 @@ class Result {
     public static List<Integer> waiter(List<Integer> number, int q) {
         List<Integer> A=new ArrayList<>();
         List<Integer> B=new ArrayList<>();
-        
+        int i=1;
+        while
+        int count=0;
+        while(count!=2){
+            i++;
+
+        for(int j=1;j<=i;j++){
+            count++;
+        }
+    }
+    for(int k=0;k<number.size();k++){
+        number.get(k);
+    }
+
         
         
     }
