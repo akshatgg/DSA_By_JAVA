@@ -1,24 +1,27 @@
 import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
-
-
+import java.util.concurrent.*;
+import java.util.regex.*;
 
 class Result {
 
     /*
-    * Complete the 'waiter' function below.
-    *
+     * Complete the 'waiter' function below.
+     *
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts following parameters:
      *  1. INTEGER_ARRAY number
      *  2. INTEGER q
      */
-    
 
-    public static List<Integer> waiter(List<Integer> number, int q) {
+public static List<Integer> waiter(List<Integer> number, int q) {
         List<Integer> A=new ArrayList<>();
         List<Integer> B=new ArrayList<>();
         List<Integer> C=new ArrayList<>();
+        List<Integer> answer=new ArrayList<>();
         C.addAll(number);
         int i=1;
         int o=0;
@@ -35,7 +38,7 @@ class Result {
             }
         }
     }
-    for(int k=0;k<C.size();k++){
+    for(int k=(C.size()-1);k>=0;k--){
         if(C.get(k)%i!=0){
           A.add(C.get(k));
         }
@@ -43,21 +46,25 @@ class Result {
             B.add(C.get(k));
         }
     }
-    o++;
+            o++;
+            Collections.reverse(B);
+            answer.addAll(B);
+            if(!A.isEmpty() && q==o){
+          Collections.reverse(A);
+               answer.addAll(A);
+            }
     C.clear();
     C.addAll(A);
-
-        
-        
     }
-    B.addAll(A);
-        return B;
+       
+        return answer;
     }
     
 }
 
-public class HIWaiter {
 
+
+public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
@@ -93,5 +100,3 @@ public class HIWaiter {
         bufferedWriter.close();
     }
 }
-
-
