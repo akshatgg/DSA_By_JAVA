@@ -14,13 +14,18 @@ class Result {
      *  2. INTEGER q
      */
     
+
     public static List<Integer> waiter(List<Integer> number, int q) {
         List<Integer> A=new ArrayList<>();
         List<Integer> B=new ArrayList<>();
+        List<Integer> C=new ArrayList<>();
+        C.addAll(number);
         int i=1;
         int o=0;
         while(o!=q){
             int count=0;
+            A.clear();
+            B.clear();
             while(count!=2){
                 count=0;
             i++;
@@ -30,19 +35,22 @@ class Result {
             }
         }
     }
-    for(int k=0;k<number.size();k++){
-        if(number.get(k)%i!=0){
-          A.add(number.get(k));
+    for(int k=0;k<C.size();k++){
+        if(C.get(k)%i!=0){
+          A.add(C.get(k));
         }
         else{
-            B.add(number.get(k));
+            B.add(C.get(k));
         }
     }
-    
+    o++;
+    C.clear();
+    C.addAll(A);
 
         
         
     }
+    B.addAll(A);
         return B;
     }
     
