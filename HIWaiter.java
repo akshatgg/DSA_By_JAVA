@@ -41,6 +41,7 @@ public static List<Integer> waiter(List<Integer> number, int q) {
     for(int k=(C.size()-1);k>=0;k--){
         if(C.get(k)%i!=0){
           A.add(C.get(k));
+          
         }
         else{
             B.add(C.get(k));
@@ -64,7 +65,7 @@ public static List<Integer> waiter(List<Integer> number, int q) {
 
 
 
-public class Solution {
+public class HIWaiter {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
