@@ -25,7 +25,9 @@ class Result {
                 count=0;
             i++;
         for(int j=1;j<=i;j++){
+            if(i%j==0){
             count++;
+            }
         }
     }
     for(int k=0;k<number.size();k++){
