@@ -18,21 +18,30 @@ class Result {
         List<Integer> A=new ArrayList<>();
         List<Integer> B=new ArrayList<>();
         int i=1;
-        while
-        int count=0;
-        while(count!=2){
+        int o=0;
+        while(o!=q){
+            int count=0;
+            while(count!=2){
+                count=0;
             i++;
-
         for(int j=1;j<=i;j++){
             count++;
         }
     }
     for(int k=0;k<number.size();k++){
-        number.get(k);
+        if(number.get(k)%i!=0){
+          A.add(number.get(k));
+        }
+        else{
+            B.add(number.get(k));
+        }
     }
+    
 
         
         
+    }
+        return B;
     }
     
 }
