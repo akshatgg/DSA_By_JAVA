@@ -15,6 +15,7 @@ class Result {
         // Write your code here
     int i=0;
     int petrol=0;
+    int j=0;
     while(i!=petrolpumps.size()){
        
         if(petrolpumps.get(i).get(0)>=petrolpumps.get(i).get(1)){
@@ -23,6 +24,7 @@ class Result {
         if(petrolpumps.get(i).get(0)<petrolpumps.get(i).get(1) && petrol!=0){
             if(petrolpumps.get(i).get(0)+petrol<petrolpumps.get(i).get(1)){
                 petrol=0;
+                j=0;
             }
             else{
                 int sub=petrolpumps.get(i).get(1)-petrolpumps.get(i).get(0);
@@ -31,7 +33,7 @@ class Result {
         }
         i++;
     }
-    return i;
+   return petrol >= 0 ? j : -1;
 
 }
 }
