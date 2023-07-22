@@ -15,12 +15,16 @@ class Result {
         // Write your code here
     int i=0;
     int petrol=0;
+    int allpetrol=0;
+    int alldistance=0;
     int j=0;
     while(i!=petrolpumps.size()){
-       
+       allpetrol=allpetrol+petrolpumps.get(i).get(0);
+       alldistance=alldistance+petrolpumps.get(i).get(0);
         if(petrolpumps.get(i).get(0)>=petrolpumps.get(i).get(1)){
             petrol=petrol+(petrolpumps.get(i).get(0)-petrolpumps.get(i).get(1));
         }
+        
         if(petrolpumps.get(i).get(0)<petrolpumps.get(i).get(1) && petrol!=0){
             if(petrolpumps.get(i).get(0)+petrol<petrolpumps.get(i).get(1)){
                 petrol=0;
@@ -33,7 +37,9 @@ class Result {
         }
         i++;
     }
-   return petrol >= 0 ? j : -1;
+  
+    return petrol >= 0 ? j : -1;
+   
 
 }
 }
