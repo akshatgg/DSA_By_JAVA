@@ -1,6 +1,10 @@
 import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
-
+import java.util.concurrent.*;
+import java.util.regex.*;
 
 class Result {
     
@@ -14,43 +18,38 @@ class Result {
     public static int truckTour(List<List<Integer>> petrolpumps){
         // Write your code here
     int i=0;
-    int petrol=0;
-    int allpetrol=0;
-    int alldistance=0;
     int j=0;
+    int petrol=0;
     while(i!=petrolpumps.size()){
-       allpetrol=allpetrol+petrolpumps.get(i).get(0);
-       alldistance=alldistance+petrolpumps.get(i).get(0);
-        if(petrolpumps.get(i).get(0)>=petrolpumps.get(i).get(1)){
-            petrol=petrol+(petrolpumps.get(i).get(0)-petrolpumps.get(i).get(1));
-        }
+    
+       
         
-        if(petrolpumps.get(i).get(0)<petrolpumps.get(i).get(1) && petrol!=0){
+           
+        
             if(petrolpumps.get(i).get(0)+petrol<petrolpumps.get(i).get(1)){
                 petrol=0;
-                j=0;
+            j=i+1;
             }
             else{
-                int sub=petrolpumps.get(i).get(1)-petrolpumps.get(i).get(0);
-                petrol=petrol-sub;
+              petrol=petrol+(petrolpumps.get(i).get(0)-petrolpumps.get(i).get(1));
+  
             }
-        }
+            
+        
         i++;
     }
-  
-    return petrol >= 0 ? j : -1;
-   
+         return petrol >= 0 ? j : -1;
 
 }
 }
+
 public class HITruckTour {
-
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-        
+
         int n = Integer.parseInt(bufferedReader.readLine().trim());
-        
+
         List<List<Integer>> petrolpumps = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
@@ -75,5 +74,3 @@ public class HITruckTour {
         bufferedWriter.close();
     }
 }
-
-
