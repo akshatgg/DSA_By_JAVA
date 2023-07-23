@@ -21,11 +21,7 @@ class Result {
     int j=0;
     int petrol=0;
     while(i!=petrolpumps.size()){
-    
-       
-        
-           
-        
+ 
             if(petrolpumps.get(i).get(0)+petrol<petrolpumps.get(i).get(1)){
                 petrol=0;
             j=i+1;
@@ -34,12 +30,9 @@ class Result {
               petrol=petrol+(petrolpumps.get(i).get(0)-petrolpumps.get(i).get(1));
   
             }
-            
-        
         i++;
     }
-         return petrol >= 0 ? j : -1;
-
+         return petrol >= 0 ? j : -0;
 }
 }
 
