@@ -48,6 +48,8 @@ public class HI2DArrayAS {
 
             List<Integer> arrRowItems = new ArrayList<>();
 
+            
+
             for (int j = 0; j < 6; j++) {
                 int arrItem = Integer.parseInt(arrRowTempItems[j]);
                 arrRowItems.add(arrItem);
